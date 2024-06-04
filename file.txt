@@ -1,2 +1,79 @@
 Flutter code for typical Mobile app interface
-# https://zapp.run/edit/flutter-zeem069sfen0?lazy=false&split=50&entry=lib%2Fmain.dart
+# import 'package:flutter/material.dart';
+
+void main() => runApp(MaterialApp(
+  home: Home(),
+));
+
+class Home extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('my first app'),
+        centerTitle: true,
+        backgroundColor: Colors.red,
+      ),
+      /*body: Container(
+        padding: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
+        margin: EdgeInsets.all(30.0),
+        color: Colors.grey[400],
+        child: Text('Hello'),
+      ),*/
+
+      /*body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: <Widget>[
+          Text('Hello World'),
+          TextButton(
+            onPressed: (){},
+            style: ButtonStyle(
+              foregroundColor: MaterialStateProperty.all<Color>(Colors.amber),
+            ),
+            child: Text('click me'),
+          ),
+          Container(
+            color: Colors.cyan,
+            padding: EdgeInsets.all(30.0),
+            child: Text('Inside container'),
+          ),
+        ],
+      ),*/
+
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: <Widget>[
+          Row(
+            children: <Widget>[
+              Text('Hello'),
+              Text('World'),
+            ],
+          ),
+          Container(
+            padding: EdgeInsets.all(20.0),
+            color: Colors.cyan,
+            child: Text('one'),
+          ),
+          Container(
+            padding: EdgeInsets.all(30.0),
+            color: Colors.red,
+            child: Text('two'),
+          ),
+          Container(
+            padding: EdgeInsets.all(40.0),
+            color: Colors.green,
+            child: Text('three'),
+          ),
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        child: Text('click'),
+        backgroundColor: Colors.red[600],
+      ),
+      
+    );
+  }
+}
