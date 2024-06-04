@@ -1,0 +1,2 @@
+Flutter code for typical Mobile app interface
+# https://zapp.run/edit/flutter-zeem069sfen0?lazy=false&split=50&entry=lib%2Fmain.dart
